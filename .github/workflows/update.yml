@@ -9,3 +9,9 @@ jobs:
         runs-on: ubuntu-24.04
         steps:
             - run: echo "Hello there"
+
+    say-hello-python:
+        runs-on: ubuntu-latest
+        steps:
+            - run: print("Hello world")
+              shell: python
