@@ -29,4 +29,4 @@ jobs:
         needs:
             - say-hello-in-bash-again
         steps:
-            - run: "Final hello in bash"
+            - run: echo "Final hello in bash"
