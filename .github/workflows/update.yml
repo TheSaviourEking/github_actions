@@ -9,9 +9,16 @@ jobs:
         runs-on: ubuntu-24.04
         steps:
             - run: echo "Hello there"
+            - run: echo "We going farther in this"
 
     say-hello-python:
         runs-on: ubuntu-latest
         steps:
             - run: print("Hello world")
               shell: python
+    
+    say-hell-node:
+        runs-on: ubuntu-latest
+        steps:
+            - run: console.log("Hello there")
+              shell: node
