@@ -17,10 +17,16 @@ jobs:
             - run: print("Hello world")
               shell: python
     
-    say-hell-in-bash-again:
+    say-hello-in-bash-again:
         runs-on: ubuntu-latest
         needs:
             - say-hello-in-bash
             - say-hello-python
         steps:
             - run: echo "Hello there"
+    final-hello:
+        runs-on: ubuntu-latest
+        needs:
+            - say-hello-in-bash-again
+        steps:
+            - run: "Final hello in bash"
